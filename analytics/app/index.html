@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <title> ProTech</title>
+    <link rel="icon" type="image/x-icon" href="/image/Frame.png">
+</head>
+<!-- de width khung co dinh  , anh thi width:100% . nut onclick bam  chuyen ve silerbar khi res -->
+
+<body>
+
+    <div class="layout">
+        <div class="sideBar">
+            <div class="flex header-side">
+                <div>
+                    <img class="img-3" src="/image/Vector (7).png" />
+                </div>
+                <div class="option-1">
+                    <div class="iconlanguage">
+                        <img width="16.89px" height="16.83px" src="/image/Language Icon - English.png" alt="">
+                    </div>
+                    <input class="ip" type="text" placeholder="English">
+                    <div class="vec-5 dropdown">
+                        <img id="myBtn" class="" src="/image/Vector (5).png">
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#Vietnamese">Vietnamese</a>
+                            <a href="#Korea">Korea</a>
+                            <a href="#USA">USA</a>
+                        </div>
+                        <script>
+                            document.getElementById("myBtn").onclick = function () { myFunction() };
+                            function myFunction() {
+                                document.getElementById("myDropdown").classList.toggle("show");
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="main-side">
+                <div>
+                    <p class="location">LOCATION</p>
+                    <div class="info_location">
+                        <div class="iconGolbal">
+                            <img width="100%" height="100%" src="/image/Vector (2).png" alt="">
+                        </div>
+                        <div class="inputValue__location  px-1">
+                            <input class="enterlocations" type="text" placeholder="Enter Locations">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="daterange"> DATE RANGE</p>
+                    <div class="info_location">
+                        <div class="iconGolbal">
+                            <img width="100%" height="100%" src="/image/Vector (3).png" alt="">
+                        </div>
+                        <div class="inputValue__location px-1">
+                            <input class="selectdates" type='datetime' placeholder="Select Dates">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div>
+                        <p>VIP</p>
+                        <div>
+                            <div class="checkbox df-center">
+                                <input type="checkbox" id="refLightDark" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p>INFLUENCER</p>
+                        <div>
+                            <div class="checkbox df-center">
+                                <input type="checkbox" id="refLightDark" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-company">
+                    <p class="company">COMPANY TYPE</p>
+                    <div class="flex-3">
+                        <div class="flex-3 ip-2">
+                            <input class="slc-1" type="text" placeholder="Staff Count">
+                            <div class="selected">
+                                <input type="checkbox" name="" id="chekSeletc" hidden>
+                                <label for="chekSeletc"><img class="icon-2" src="/image/Vector (5).png" alt=""></label>
+                                <div class="contentSelect">
+                                    <p>Private</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ip-2">
+                            <input class="slc-2" type="text" placeholder=" Revenue Vol.">
+                            <div class="selected-rv">
+                                <input type="checkbox" name="" id="chekSeletc-rv" hidden>
+                                <label for="chekSeletc-rv"> <img class="icon-2" src="/image/Vector (5).png"
+                                        alt=""></label>
+                                <div class="contentSelect-rv">
+                                    <p>Revenue USD</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <button>Sreach</button>
+                </div>
+                <hr class="hr-3">
+                <div>
+                    <div class="d-flex topcus">
+                        <p>TOP CUSTOMERS</p>
+                        <div class="menu__topcus">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="name-top">
+                        <div class="flex-4">
+                            <img class="img-4" src="/image/Ellipse 1.png">
+                            <p class="name">Ronald Richards</p>
+                        </div>
+                        <div class="flex-4">
+                            <img class="img-4" src="/image/Ellipse 3.png">
+                            <p class="name">Ralph Edwards</p>
+                        </div>
+                        <div class="flex-4">
+                            <img class="img-4" src="/image/Ellipse 2.png">
+                            <p class="name">Kristin Watson</p>
+                        </div>
+                        <div class="flex-4">
+                            <img class="img-4" src="/image/Ellipse 4.png">
+                            <p class="name"> Esther Howard</p>
+                        </div>
+                        <div class="flex-4">
+                            <img class="img-4" src="/image/Ellipse 5.png">
+                            <p class="name">Danielle Lane </p>
+                        </div>
+                        <div class="flex-4">
+                            <img class="img-4" src="/image/Ellipse 6.png">
+                            <p class="name">Robert Fox </p>
+                        </div>
+                        <div class="flex-4">
+                            <img class="img-4" src="/image/Ellipse 70.png">
+                            <p class="name">Leslie Alexander </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="main" id="main-content">
+
+            <div class="header-main px-1">
+                <div>
+                    <img class="img" src="/image/Frame.png">
+                </div>
+                <div class="flex-5">
+
+                    <select class="px-1">
+                        <option>
+                            Isabella F.
+                        </option>
+                    </select>
+                    <div>
+                        <img width="39.7px" height="39.66px" src="/image/user-face.png" style="padding-bottom: 7px;">
+                    </div>
+                </div>
+
+            </div>
+            <!-- Reponsive header -->
+            <div class="header-2">
+
+                <img class="img" src="/image/Frame.png">
+                <div>
+                    <img class="img-iconmenu" id="menu" src="/image/Vector (7).png" onclick="showSideBar()">
+                    <script>
+                        function showSideBar() {
+                            var BtnMenu = document.getElementById("menu");
+                            var Menu = document.getElementById("slidebar");
+                            Menu.classList.toggle("action");
+                        }
+                    </script>
+                </div>
+            </div>
+            <!-- responsive header -->
+
+            <hr class="hr-1">
+            <div class="main-res">
+                <div class="main-flex">
+                    <div class="analytics" id="ana">
+                        <div class="header px-3">
+                            <div>
+                                <p>ANALYTICS</p>
+                            </div>
+                            <div class="flex-5 ip-3">
+                                <div class="selected-ana">
+                                    <input class="slc-3" type="text" placeholder="1 Dec - 20 Jan">
+                                    <input type="checkbox" name="" id="chekSeletc-ana" hidden>
+                                    <label for="chekSeletc-ana"><img class="icon" src="/image/Vector (5).png"
+                                            alt=""></label>
+                                    <div class="contentSelect-ana">
+                                        <p>21 May - 29 Sep</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="analytics__content">
+                            <div class="iconNext">
+                                <button>
+                                    < </button>
+                                        <button>></button>
+                            </div>
+                            <img class="anh" width="100%" height="100%" src="/image/anh.jpg" alt="">
+                        </div>
+
+
+                    </div>
+
+                    <div class="heatmap" id="global">
+
+                        <div>
+                            <div class="header px-3">
+                                <div>
+                                    <p>GLOBAL HEATMAP</p>
+                                </div>
+                                <div class="flex-5 ip-3">
+                                    <div class="selected-glo">
+                                        <input class="slc-3" type="text" placeholder="1 Dec - 20 Jan">
+                                        <input type="checkbox" name="" id="chekSeletc-glo" hidden>
+                                        <label for="chekSeletc-glo"><img class="icon" src="/image/Vector (5).png"
+                                                alt=""></label>
+                                        <div class="contentSelect-glo">
+                                            <p>21 May - 29 Sep</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="map">
+                                <img class="mapp" width="100%" src="/image/mapp.png" alt="">
+
+                            </div>
+                            <div>
+                                <div class="congtru">
+                                    <div class="congtru">
+                                        <img src="/image/Vector (9).png" alt="">
+                                    </div>
+                                    <div class="congtru">
+                                        <img src="/image/Vector (8).png" alt="">
+                                    </div>
+
+                                </div>
+                                <hr class="hr-2">
+                            </div>
+                            <br>
+                            <div class="footer ">
+                                <div class="footer text-map">
+                                    <div class="circle" style="background-color: #005BD1;"></div>
+                                    <p class="txt">1m+</p>
+                                </div>
+                                <div class="footer text-map">
+                                    <div class="circle" style="background-color:#006EFF"></div>
+                                    <p class="txt">500k+</p>
+                                </div>
+                                <div class="footer text-map">
+                                    <div class="circle" style="background-color:#4299FF"></div>
+                                    <p class="txt">100k+</p>
+                                </div>
+                                <div class="footer text-map">
+                                    <div class="circle" style="background-color:#85C4FF"></div>
+                                    <p class="txt">10k+</p>
+                                </div>
+                                <div class="footer text-map">
+                                    <div class="circle" style="background-color:#C1E0FD"></div>
+                                    <p class="txt"> 5k </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- responsive -->
+                <div class="d-flex-2">
+                    <div class="analytics-2">
+                        <div class="header px-3">
+                            <div>
+                                <p>ANALYTICS</p>
+                            </div>
+                            <div class="iconNext">
+                                <button>
+                                    < </button>
+                                        <button>></button>
+                            </div>
+                        </div>
+
+                        <div class="analytics__content-2">
+                            <img class="picture" width="100%" height="100%" src="/image/anh.jpg" alt="">
+                        </div>
+
+
+                    </div>
+
+                    <div class="heatmap-2">
+
+                        <div>
+                            <div class="header-glo px-3">
+                                <div>
+                                    <p>GLOBAL HEATMAP</p>
+                                </div>
+                                <div class="flex-heat">
+                                    <img src="/image/Vector (3).png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="map-glo">
+                                <img class="picture-2" width="100%" src="/image/mapp.png" alt="">
+
+                            </div>
+                            <div>
+                                <div class="congtru-glo">
+                                    <div class="congtru">
+                                        <img src="/image/Vector (9).png" alt="">
+                                    </div>
+                                    <div class="congtru">
+                                        <img src="/image/Vector (8).png" alt="">
+                                    </div>
+                                </div>
+                                <hr class="hr-glo">
+                            </div>
+                            <br>
+                            <div class="footer ">
+                                <div class="footer text-map-glo">
+                                    <div class="circle" style="background-color: #005BD1;"></div>
+                                    <p class="txt-glo">1m+</p>
+                                </div>
+                                <div class="footer text-map-glo">
+                                    <div class="circle" style="background-color:#006EFF"></div>
+                                    <p class="txt-glo">500k+</p>
+                                </div>
+                                <div class="footer text-map-glo">
+                                    <div class="circle" style="background-color:#4299FF"></div>
+                                    <p class="txt-glo">100k+</p>
+                                </div>
+                                <div class="footer text-map-glo">
+                                    <div class="circle" style="background-color:#85C4FF"></div>
+                                    <p class="txt-glo">10k+</p>
+                                </div>
+                                <div class="footer text-map-glo">
+                                    <div class="circle" style="background-color:#C1E0FD"></div>
+                                    <p class="txt-glo"> 5k </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- responsive -->
+                <div class="d-flex-main">
+                    <div class="flex-2">
+                        <div class="d-flex-main-2">
+                            <div class="flex-1 border" id="cus">
+                                <div class="header d-flex p-3">
+                                    <p>CUSTOMER GROWTH</p>
+                                    <div class="iconRigth d-flex">
+                                        <div class="setting">
+                                            <img width="100%" src="/image/Vector (4).png" alt="">
+                                        </div>
+                                        <div class="menu">
+                                            <img width="100%" src="/image/settingg.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="hr-4">
+                                <img class="day-365" width="332px" src="/image/365day.png" alt="">
+                                <hr>
+                                <div class="seletcSup d-flex">
+                                    <div class="content d-flex">
+                                        <div class="iconSub">
+                                        </div>
+                                        <p>Weekly</p>
+                                    </div>
+                                    <div class="content d-flex">
+                                        <div class="iconSub">
+                                        </div>
+                                        <p>Monthly</p>
+                                    </div>
+                                    <div class="content d-flex">
+                                        <div class="iconSub">
+                                        </div>
+                                        <p>Yearly</p>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="flex-1  border">
+                                <div class="header d-flex p-2" id="sale">
+                                    <p>SALES DATA
+                                    <p>
+                                    <div class="iconRigth d-flex">
+                                        <div class="setting">
+                                            <img width="100%" src="/image/Vector (4).png" alt="">
+                                        </div>
+                                        <div class="menu">
+                                            <img width="100%" src="/image/settingg.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="hr-4">
+                                <img class="saledata" width="330px" src="/image/bieudo.png" alt="">
+                                <hr class="hr-sale">
+                                <div class="seletcSup d-flex">
+                                    <div class="content d-flex">
+                                        <div class="iconSub">
+
+                                        </div>
+                                        <p>Weekly</p>
+                                    </div>
+                                    <div class="content d-flex">
+                                        <div class="iconSub">
+
+                                        </div>
+                                        <p>Monthly</p>
+                                    </div>
+                                    <div class="content d-flex">
+                                        <div class="iconSub">
+
+                                        </div>
+                                        <p>Yearly</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <!-- responsive rev -->
+                        <div class=" flex-rev2  ">
+                            <div class="header-1 d-flex p-2  ">
+                                <p> REVENUE</p>
+                                <div class="iconRigth d-flex">
+                                    <div class="setting">
+                                        <img width="100%" src="/image/Vector (4).png" alt="">
+                                    </div>
+                                    <div class="menu">
+                                        <img width="100%" src="/image/settingg.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <hr style="margin: 0;">
+                            <div class="body_revenue1">
+                                <div class="body_revenue2">
+                                    <text class="tx_revenue1">Year To Date</text>
+                                    <div style="margin-top: 5px;">
+                                        <text class="tx_so">£53288</text>
+                                        <text class="tx_tangtruong">+ 45%</text>
+                                    </div>
+                                </div>
+                                <div class="body_revenue3">
+                                    <text class="tx_revenue1">Monthly</text>
+                                    <div style="margin-top: 5px;">
+                                        <text class="tx_so">£8628</text>
+                                        <text class="tx_tangtruong">+ 12%</text>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- responsive rev -->
+                        <div class="abc" id="new">
+
+                            <div class="flex-new border m-0 ml-2 newLeads">
+                                <div class="header d-flex new_leads">
+                                    <p class="p-new">NEW LEADS</p>
+                                    <div class="iconRigth d-flex">
+                                        <button>
+                                            < </button>
+                                                <button>></button>
+                                    </div>
+                                </div>
+
+
+                                <div>
+                                    <table style="width: 100%; text-align: left; " class="table_newlead">
+                                        <thead>
+                                            <th style="width: 7%;text-align: left;">
+                                                <div class="body_lead">
+                                                    <text class="tx_newSource">SOURCE</text>
+                                                    <img class="img_down " src="/image/Vector (5).png" />
+                                                </div>
+                                            </th>
+                                            <th style="width: 23%;text-align: left;">
+                                                <div class="body_lead">
+                                                    <text class="tx_newlead1 ">DATE</text>
+                                                    <img class="img_down-2 " src="/image/Vector (5).png" />
+                                                </div>
+                                            </th>
+                                            <th style="width: 20%;text-align: left;">
+                                                <div class="body_lead">
+                                                    <text class="tx_newlead1 ">QUOTE</text>
+                                                    <img class="img_down-3 " src="/image/Vector (5).png" />
+                                                </div>
+                                            </th>
+                                            <th style="width: 25%;text-align: left;">
+                                                <div class="body_lead">
+                                                    <text class="tx_newlead1">MANAGER</text>
+                                                    <img class="img_down-4 " src="/image/Vector (5).png" />
+                                                </div>
+                                            </th>
+                                            <th style="width: 25%;text-align: left;">
+                                                <div class="body_lead">
+                                                    <text class="tx_newlead1">CUSTOMER</text>
+                                                    <img class="img_down-5 " src="/image/Vector (5).png" />
+                                                </div>
+                                            </th>
+                                        </thead>
+                                        <tbody>
+                                            <tr id="tr1">
+                                                <th> <img src="/image/logos_salesforce.png"></th>
+                                                <th>18 Jan 2023</th>
+                                                <th>£46,234</th>
+                                                <th>Francesca Simonz</th>
+                                                <th>mthurn@meta.com</th>
+                                            </tr>
+                                            <tr id="tr1">
+                                                <th> <img src="/image/skill-icons_instagram.png"></th>
+                                                <th>04 Jan 2023</th>
+                                                <th>£21,703</th>
+                                                <th>Jane Cooper</th>
+                                                <th>rgarcia@amazon.com</th>
+                                            </tr>
+                                            <tr id="tr1">
+                                                <th> <img src="/image/logos_whatsapp-icon.png"></th>
+                                                <th>22 Dec 2022</th>
+                                                <th>£106,832</th>
+                                                <th>Marvin McKinney</th>
+                                                <th>priva.g@microsoft.com</th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-trend-rev">
+
+                        <div class=" flex-trend " id="trend">
+                            <div class="header-1 d-flex p-2  ">
+                                <p> TRENDING LOCATIONS</p>
+                                <div class="iconRigth d-flex">
+                                    <div class="setting">
+                                        <img width="100%" src="/image/Vector (4).png" alt="">
+                                    </div>
+                                    <div class="menu">
+                                        <img width="100%" src="/image/settingg.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <table style="width: 100%;">
+                                    <thead style="padding-top: 10px;">
+                                        <th style="width: 20%; height: 32px; text-align: center;" class="tx_newlead1">
+                                            COUNTRY</th>
+                                        <th style="width: 35%; text-align: left;" class="city">CITY</th>
+                                        <th style="width: 45%; text-align: center;">
+                                            <text class="tx_newlead1">VISITS</text>
+                                            <img class="icon-trend" src="/image/Vector (5).png" />
+                                        </th>
+                                    </thead>
+                                    <tbody>
+                                        <tr id="tr2">
+                                            <th id="nation"><img src="/image/twemoji_flag-united-kingdom.png" />
+                                            </th>
+                                            <th id="namenation">London</th>
+                                            <th id="nation">
+                                                <div>
+                                                    <text class="tx_so1">95554 </text>
+                                                    <img class="icon-trend"
+                                                        src="/image/ic_outline-arrow-right-alt.png" />
+                                                </div>
+                                            </th>
+                                        </tr>
+                                        <tr id="tr2">
+                                            <th id="nation"><img src="/image/twemoji_flag-united-states.png" />
+                                            </th>
+                                            <th id="namenation">Texas</th>
+                                            <th id="nation">
+                                                <div>
+                                                    <text class="tx_so1">93046 </text>
+                                                    <img class="icon-trend"
+                                                        src="/image/ic_outline-arrow-right-alt-1.png" />
+                                                </div>
+                                            </th>
+                                        </tr>
+                                        <tr id="tr2">
+                                            <th id="nation"><img src="/image/twemoji_flag-india.png" /> </th>
+                                            <th id="namenation">New Delhi</th>
+                                            <th id="nation">
+                                                <div>
+                                                    <text class="tx_so1">83676 </text>
+                                                    <img class="icon-trend"
+                                                        src="/image/ic_outline-arrow-right-alt-1.png" />
+                                                </div>
+                                            </th>
+                                        </tr>
+                                        <tr id="tr2">
+                                            <th id="nation"><img src="/image/twemoji_flag-turkey.png" /> </th>
+                                            <th id="namenation">Istanbul</th>
+                                            <th id="nation">
+                                                <div>
+                                                    <text class="tx_so1">70443 </text>
+                                                    <img class="icon-trend"
+                                                        src="/image/ic_outline-arrow-right-alt.png" />
+                                                </div>
+                                            </th>
+                                        </tr>
+                                        <tr id="tr2">
+                                            <th id="nation"><img src="/image/twemoji_flag-brazil.png" /> </th>
+                                            <th id="namenation">Brasilia</th>
+                                            <th id="nation">
+                                                <div>
+                                                    <text class="tx_so1">50963 </text>
+                                                    <img class="icon-trend"
+                                                        src="/image/ic_outline-arrow-right-alt-1.png" />
+                                                </div>
+                                            </th>
+                                        </tr>
+                                        <tr id="tr2">
+                                            <th id="nation"><img src="/image/twemoji_flag-united-arab-emirates.png" />
+                                            </th>
+                                            <th id="namenation">Dubai</th>
+                                            <th id="nation">
+                                                <div>
+                                                    <text class="tx_so1">45904 </text>
+                                                    <img class="icon-trend"
+                                                        src="/image/ic_outline-arrow-right-alt.png" />
+                                                </div>
+                                            </th>
+                                        </tr>
+                                        <tr id="tr2">
+                                            <th id="nation"><img src="/image/twemoji_flag-mexico.png" /> </th>
+                                            <th id="namenation">Mexico City</th>
+                                            <th id="nation">
+                                                <div>
+                                                    <text class="tx_so1">43359 </text>
+                                                    <img class="icon-trend"
+                                                        src="/image/ic_outline-arrow-right-alt.png" />
+                                                </div>
+                                            </th>
+                                        </tr>
+                                        <tr id="tr2">
+                                            <th id="nation"><img src="/image/twemoji_flag-united-states.png" />
+                                            </th>
+                                            <th id="namenation">Miami</th>
+                                            <th id="nation">
+                                                <div>
+                                                    <text class="tx_so1">28200 </text>
+                                                    <img class="icon-trend"
+                                                        src="/image/ic_outline-arrow-right-alt-1.png" />
+                                                </div>
+                                            </th>
+                                        </tr>
+                                        <tr id="tr2">
+                                            <th id="nation"><img src="/image/twemoji_flag-colombia.png" /> </th>
+                                            <th id="namenation">Bogota</th>
+                                            <th id="nation">
+                                                <div>
+                                                    <text class="tx_so1">20796 </text>
+                                                    <img class="icon-trend"
+                                                        src="/image/ic_outline-arrow-right-alt.png" />
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+
+                            </div>
+                        </div>
+                        <div class=" flex-rev  " id="revenue">
+                            <div class="header-1 d-flex p-2  ">
+                                <p> REVENUE</p>
+                                <div class="iconRigth d-flex">
+                                    <div class="setting">
+                                        <img width="100%" src="/image/Vector (4).png" alt="">
+                                    </div>
+                                    <div class="menu">
+                                        <img width="100%" src="/image/settingg.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <hr style="margin: 0;">
+                            <div class="body_revenue1">
+                                <div>
+                                    <text class="tx_revenue1">Year To Date</text>
+                                    <div style="margin-top: 5px;">
+                                        <text class="tx_so">£53288</text>
+                                        <text class="tx_tangtruong">+ 45%</text>
+                                    </div>
+                                </div>
+                                <div class="body_revenue3">
+                                    <text class="tx_revenue1">Monthly</text>
+                                    <div style="margin-top: 5px;">
+                                        <text class="tx_so">£8628</text>
+                                        <text class="tx_tangtruong">+ 12%</text>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="menuBar">
+                <img class="iconmenu" src="/image/Vector (10).png" alt="">
+                <img class="iconmenu" src="/image/Vector (11).png" alt="">
+                <img class="iconmenu" src="/image/Vector (12).png" alt="">
+                <img class="iconmenu" src="/image/Vector (13).png" alt="">
+                <img class="iconmenu" src="/image/Vector (14).png" alt="">
+                <img class="iconmenu" src="/image/Group.png" alt="">
+            </div>
+
+        </div>
+        <div class="check" id="slidebar">
+            <div>
+                <div class="header-2">
+
+                    <img class="img" src="/image/Frame.png">
+                    <img class="img-iconmenu" src="/image/Vector (7).png" onclick="showSideBar()">
+
+                </div>
+                <div style="padding-left: 20px;">
+                    <div>
+                        <p class="location">LOCATION</p>
+                        <div class="info_location">
+                            <div class="iconGolbal">
+                                <img width="100%" height="100%" src="/image/Vector (2).png" alt="">
+                            </div>
+                            <div class="inputValue__location  px-1">
+                                <input class="enterlocations" type="text" placeholder="Enter Locations">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="daterange"> DATE RANGE</p>
+                        <div class="info_location">
+                            <div class="iconGolbal">
+                                <img width="100%" height="100%" src="/image/Vector (3).png" alt="">
+                            </div>
+                            <div class="inputValue__location px-1">
+                                <input class="selectdates" type='datetime' placeholder="Select Dates">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-container-2">
+                        <div>
+                            <p>VIP</p>
+                            <div>
+                                <div class="checkbox df-center">
+                                    <input type="checkbox" id="refLightDark" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p>INFLUENCER</p>
+                            <div>
+                                <div class="checkbox df-center">
+                                    <input type="checkbox" id="refLightDark" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-company">
+                        <p class="company">COMPANY TYPE</p>
+                        <div class="flex-3">
+                            <div class="flex-3 ip-2">
+                                <input class="slc-1" type="text" placeholder="Staff Count">
+                                <div class="selected">
+                                    <input type="checkbox" name="" id="chekSeletc" hidden>
+                                    <label for="chekSeletc"><img class="icon-2" src="/image/Vector (5).png"
+                                            alt=""></label>
+                                    <div class="contentSelect">
+                                        <p>Private</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ip-2">
+                                <input class="slc-2" type="text" placeholder=" Revenue Vol.">
+                                <div class="selected-rv">
+                                    <input type="checkbox" name="" id="chekSeletc-rv" hidden>
+                                    <label for="chekSeletc-rv"> <img class="icon-2" src="/image/Vector (5).png"
+                                            alt=""></label>
+                                    <div class="contentSelect-rv">
+                                        <p>Revenue USD</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div>
+                        <button>Sreach</button>
+                    </div>
+                    <hr class="hr-3">
+                    <div>
+                        <div>
+
+                            <div class="content-name">
+                                <div class="flex-img">
+                                    <img class="img-res" src="/image/Ellipse 1.png">
+                                    <p class="name">Ronald Richards</p>
+                                </div>
+                                <div class="flex-img">
+                                    <img class="img-res" src="/image/Ellipse 5.png">
+                                    <p class="name">Danielle Lane </p>
+                                </div>
+                                <div class="flex-img">
+                                    <img class="img-res" src="/image/Ellipse 3.png">
+                                    <p class="name">Ralph Edwards</p>
+                                </div>
+                                <div class="flex-img">
+                                    <img class="img-res" src="/image/Ellipse 6.png">
+                                    <p class="name">Robert Fox </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div>
+                            <button class="btn">View More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menuBar">
+                    <img class="iconmenu" src="/image/Vector (10).png" alt="">
+                    <img class="iconmenu" src="/image/Vector (11).png" alt="">
+                    <img class="iconmenu" src="/image/Vector (12).png" alt="">
+                    <img class="iconmenu" src="/image/Vector (13).png" alt="">
+                    <img class="iconmenu" src="/image/Vector (14).png" alt="">
+                    <img class="iconmenu" src="/image/Group.png" alt="">
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+</body>
+
+</html>
